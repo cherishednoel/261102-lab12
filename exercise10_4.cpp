@@ -1,10 +1,10 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <cmath>
 
 using namespace std;
 
-int even2_24[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24};
 int numm5_p5[] = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
 
 int main() {
@@ -13,13 +13,14 @@ int main() {
     int a = rand() % 100 + 1;
     cout << a << endl;
 
-    int b = rand() % 11;
-    cout << even2_24[b] << endl;
+    int b = rand() % 12 + 1;
+    cout << 2*b << endl;
 
     int c = rand() % 10;
     cout << numm5_p5[c] << endl;
 
-    
+    int d = rand() % 10 + 1;
+    cout << pow(2, d) << endl;
 
     return 0;
 }
