@@ -6,15 +6,13 @@ int gcd(int x, int y, int z) {
     int i = 2, ans = 1;
     while(true) {
         if(i > x || i > y || i > z) {
-            return ans;
+            break;
         }
-        if(x % i == 0 && y % i == 0 && z % i == 0) {
-            ans++;
-            i++;
-        } else {
-            return ans;
-        }
+        if(x % i == 0 && y % i == 0 && z % i == 0)
+        ans = i;
+        i++;
     }
+    return ans;
 }
 
 int main() {
